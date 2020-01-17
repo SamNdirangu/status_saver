@@ -225,6 +225,20 @@ class _BackdropPanelState extends State<BackdropPanel> {
                       fontWeight: FontWeight.w600)),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(
+                left: 8.0, top: 10.0, right: 10.0, bottom: 10),
+            child: GestureDetector(
+              onTap: () => launch(
+                  'https://github.com/SamNdirangu/status_saver'),
+              child: const Text('Github Repo',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                      decoration: TextDecoration.underline,
+                      color: Color(0xFF2E7D32),
+                      fontWeight: FontWeight.w600)),
+            ),
+          ),
           const SaleWidget(),
           const SizedBox(height: 200)
         ])));
